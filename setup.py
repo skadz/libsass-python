@@ -157,7 +157,7 @@ else:
     define_macros = []
 
 # Py_LIMITED_API does not work for Py_DEBUG either
-if distutils.sysconfig.get_config_var('Py_DEBUG') == 1 and sys.version_info < (3,9):
+if distutils.sysconfig.get_config_var('Py_DEBUG') == 1 and sys.version_info < (3,10):
     py_limited_api = False
     define_macros = []
 
